@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nervensystem Reset – Endlich tief schlafen & erholt aufwachen | Peter Steinlechner</title>
+<meta name="description" content="Warum du morgens erschöpft aufwachst, obwohl du schläfst – und wie du das in 14 Tagen änderst. Die Breathwork-Methode von Peter Steinlechner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --teal: #07beb1;
+  --teal-dark: #059e93;
+  --teal-pale: #e8faf9;
+  --teal-mid: #b0e8e5;
+  --charcoal: #3b3b3b;
+  --text: #3b3b3b;
+  --text-light: #666;
+  --white: #fff;
+  --off-white: #f8f8f8;
+  --border: #e8e8e8;
+  --green-ok: #00930d;
+  --red-no: #de0000;
+  --gold: #ca9900;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: #fff;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--teal);
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+/* ── LOGO BAR ── */
+.logobar {
+  background: #fff;
+  padding: 14px 40px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.logobar img { height: 44px; }
+.logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--teal);
+  letter-spacing: -0.5px;
+}
+.logo-text span { color: var(--charcoal); }
+
+/* ── DATE META ── */
+.meta-bar {
+  background: #fff;
+  padding: 8px 40px 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ── HERO SECTION ── */
+.hero-section {
+  background: #fff;
+  padding: 0 20px 60px;
+}
+.hero-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.hero-left { flex: 1; }
+.hero-right {
+  width: 340px;
+  flex-shrink: 0;
+}
+.hero-right img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+.hero-right .img-placeholder {
+  width: 100%;
+  height: 420px;
+  background: linear-gradient(160deg, #e8faf9 0%, #c5e8e5 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-dark);
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+.for-line {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+.hero-left h1 {
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--charcoal);
+  margin-bottom: 22px;
+}
+.hero-lead {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 22px;
+  color: var(--charcoal);
+}
+.hero-story p { margin-bottom: 16px; font-size: 17px; }
+
+/* ── TEAL BANNER ── */
+.teal-banner {
+  background: var(--teal);
+  color: #fff;
+  padding: 18px 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.teal-banner strong { font-weight: 800; }
+
+/* ── MAIN CONTENT SECTIONS ── */
+.section {
+  padding: 70px 20px;
+}
+.section.bg-light { background: var(--off-white); }
+.section.bg-teal-pale { background: rgba(7,190,177,0.07); }
+.section.bg-dark {
+  background: rgba(7,190,177,0.15);
+}
+
+.container { max-width: 1000px; margin: 0 auto; }
+
+h2 {
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--charcoal);
+}
+p { margin-bottom: 18px; }
+p:last-child { margin-bottom: 0; }
+
+/* ── WHAT BLOCKS ── */
+.wusstest-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.wusstest-item {
+  flex: 1;
+  text-align: center;
+}
+.wusstest-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+  color: var(--teal);
+}
+.wusstest-icon svg { width:56px; height:56px; }
+
+/* ── BAD NEWS / GOOD NEWS ── */
+.schlimm-title {
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+}
+
+/* ── 3 CARDS BLOCK ── */
+.three-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.card-item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.card-item .card-icon { font-size: 3rem; margin-bottom: 14px; }
+.card-item h3 { color: var(--teal); margin-bottom: 12px; font-size: 1.1rem; }
+.card-item p { font-size: 15px; color: var(--text-light); margin: 0; }
+
+/* ── ABOUT / STORY SECTION ── */
+.about-grid {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.about-img {
+  width: 380px;
+  flex-shrink: 0;
+}
+.about-img .img-placeholder {
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(160deg, #c5e8e5 0%, #e8faf9 100%);
+  border-radius: 24px 24px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-dark);
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+  font-style: italic;
+}
+.about-text { flex: 1; }
+
+/* ── HEADLINE KURSIV ── */
+.hi-headline {
+  font-size: clamp(26px,3vw,36px);
+  font-weight: 800;
+  color: var(--teal);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* ── CREDENTIALS BLOCK ── */
+.cred-grid {
+  display: flex;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.cred-card {
+  flex: 1;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 22px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.cred-card .cred-icon {
+  font-size: 56px;
+  margin-bottom: 14px;
+  color: var(--teal);
+}
+.cred-card h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+.cred-card p { font-size: 14px; color: var(--text-light); margin: 0; }
+
+.cred-list {
+  list-style: none;
+  margin-top: 30px;
+}
+.cred-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 16px;
+}
+.cred-list li:last-child { border-bottom: none; }
+.cred-icon-sm {
+  color: var(--teal);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ── MEDIA LOGOS ── */
+.media-logos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.media-logo {
+  background: var(--off-white);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-light);
+  border: 1px solid var(--border);
+}
+
+/* ── TESTIMONIAL CARDS ── */
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+.testi-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: relative;
+}
+.testi-stars { color: var(--gold); font-size: 1rem; margin-bottom: 10px; }
+.testi-name { font-weight: 700; font-size: 15px; margin-bottom: 2px; }
+.testi-job { font-size: 11px; color: var(--teal); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 14px; }
+.testi-text { font-size: 15px; color: var(--text); line-height: 1.6; }
+
+/* ── PRODUCT SECTION ── */
+.product-intro { text-align: center; margin-bottom: 40px; }
+.product-grid {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.product-img {
+  width: 380px;
+  flex-shrink: 0;
+}
+.product-img .img-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #07beb1 0%, #059e93 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.product-img .img-placeholder strong { font-size: 1.3rem; display: block; margin-bottom: 8px; }
+.product-text { flex: 1; }
+
+/* ── CHECKPOINT LIST ── */
+.checkpoints {
+  list-style: none;
+  margin: 20px 0;
+}
+.checkpoints li {
+  padding: 8px 0 8px 32px;
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.checkpoints li:last-child { border-bottom: none; }
+.checkpoints li::before {
+  content: '✅';
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+}
+
+/* ── VISION / RESULT SECTION ── */
+.vision-grid {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.vision-img { width: 360px; flex-shrink: 0; }
+.vision-img .img-placeholder {
+  width: 100%;
+  height: 440px;
+  background: linear-gradient(160deg, #e8faf9 0%, #b0e8e5 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-dark);
+  font-size: 13px;
+  text-align: center;
+  padding: 24px;
+  font-style: italic;
+}
+.vision-text { flex: 1; }
+.vision-list { list-style: none; margin-top: 20px; }
+.vision-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 16px;
+}
+.vision-list li:last-child { border-bottom: none; }
+.vision-check {
+  color: var(--teal);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ── PRICE BOX ── */
+.price-wrapper { max-width: 1000px; margin: 0 auto; }
+.price-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.1);
+  border-top: 5px solid var(--teal);
+  max-width: 700px;
+  margin: 40px auto 0;
+}
+.price-content-list { list-style: none; margin: 20px 0; }
+.price-content-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 16px;
+}
+.price-content-list li:last-child { border-bottom: none; }
+.price-tag-box {
+  text-align: center;
+  background: var(--teal-pale);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  border: 2px dashed var(--teal);
+}
+.price-old {
+  font-size: 16px;
+  color: var(--text-light);
+  text-decoration: line-through;
+}
+.price-new {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--green-ok);
+}
+.cta-button {
+  display: block;
+  background: var(--gold);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 800;
+  padding: 20px 30px;
+  border-radius: 14px;
+  margin: 24px auto 0;
+  max-width: 520px;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: none;
+  font-family: 'Urbanist', sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+}
+.cta-button:hover { background: #b88a00; transform: translateY(-2px); }
+.cta-sub-text { font-size: 14px; text-align: center; color: var(--text-light); margin-top: 10px; }
+
+/* ── BONUS ITEMS ── */
+.bonus-item {
+  margin-bottom: 40px;
+}
+.bonus-label {
+  color: var(--red-no);
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.bonus-img-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.bonus-img-placeholder {
+  width: 200px;
+  height: 180px;
+  background: linear-gradient(135deg, #e8faf9, #b0e8e5);
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-dark);
+  font-size: 13px;
+  text-align: center;
+  padding: 16px;
+  font-style: italic;
+}
+
+/* ── VALUE SUMMARY ── */
+.value-box {
+  background: var(--teal-pale);
+  border: 2px solid var(--teal);
+  border-radius: 10px;
+  padding: 20px 28px;
+  text-align: center;
+  margin: 24px 0;
+  font-size: 16px;
+}
+.value-old { text-decoration: line-through; color: var(--text-light); }
+.value-new { font-size: 1.8rem; font-weight: 900; color: var(--green-ok); }
+
+/* ── GUARANTEE ── */
+.guarantee-grid {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.guarantee-img { width: 160px; flex-shrink: 0; text-align: center; font-size: 80px; }
+.guarantee-text h3 { color: var(--charcoal); margin-bottom: 12px; }
+
+/* ── TESTIMONIALS BIG ── */
+.testi-big-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+.testi-big {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: relative;
+}
+.testi-top {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.testi-avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--teal-mid);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--teal-dark);
+  flex-shrink: 0;
+}
+.testi-info .name { font-weight: 700; font-size: 15px; }
+.testi-info .role { font-size: 11px; color: var(--teal); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.testi-stars-inline { color: var(--gold); font-size: 0.9rem; }
+.testi-quote { font-size: 15px; line-height: 1.65; color: var(--text); }
+.tve-verified {
+  font-size: 11px;
+  color: var(--teal);
+  font-weight: 700;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── PROS / CONS ── */
+.pros-cons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 36px;
+}
+.pros-box, .cons-box {
+  border-radius: 8px;
+  padding: 28px;
+}
+.pros-box { background: #fff; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.cons-box { background: #fff; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.pros-box h3 { color: var(--charcoal); margin-bottom: 6px; }
+.cons-box h3 { color: var(--charcoal); margin-bottom: 6px; }
+.subline { font-size: 14px; color: var(--text-light); margin-bottom: 16px; }
+.pros-list, .cons-list { list-style: none; }
+.pros-list li, .cons-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.pros-list li:last-child, .cons-list li:last-child { border-bottom: none; }
+.pros-icon { color: var(--teal); flex-shrink: 0; }
+.cons-icon { color: var(--red-no); flex-shrink: 0; }
+
+/* ── TRUST ICONS ── */
+.trust-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+.trust-item { text-align: center; max-width: 180px; }
+.trust-icon-img { font-size: 64px; margin-bottom: 12px; }
+.trust-item p { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.trust-item small { font-size: 13px; color: var(--text-light); line-height: 1.5; display: block; }
+
+/* ── FAQ TOGGLE ── */
+.faq-list { margin-top: 36px; max-width: 1000px; margin-left: auto; margin-right: auto; }
+.faq-item {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  cursor: pointer;
+  background: rgba(7,190,177,0.05);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--charcoal);
+  transition: background 0.2s;
+}
+.faq-q:hover { background: rgba(7,190,177,0.1); }
+.faq-q.open { background: #fff; font-weight: 700; }
+.faq-arrow {
+  color: var(--teal);
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+.faq-q.open .faq-arrow { transform: rotate(180deg); }
+.faq-a {
+  display: none;
+  padding: 20px 24px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.65;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+.faq-a.open { display: block; }
+
+/* ── FINAL CTA REPEAT ── */
+.section-cta { background: var(--off-white); padding: 60px 20px; text-align: center; }
+
+/* ── DISCLAIMER ── */
+.disclaimer {
+  background: #f0f0f0;
+  padding: 18px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--teal);
+  padding: 24px 20px;
+  text-align: center;
+}
+.footer-nav { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
+.footer-nav a { color: #fff; text-decoration: none; font-size: 13px; opacity: 0.85; }
+.footer-nav a:hover { opacity: 1; }
+footer p { font-size: 13px; color: rgba(255,255,255,0.7); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hero-inner, .about-grid, .product-grid, .vision-grid, .guarantee-grid { flex-direction: column; }
+  .hero-right, .about-img, .product-img, .vision-img { width: 100%; }
+  .three-cards, .testi-grid, .testi-big-grid, .pros-cons-grid { grid-template-columns: 1fr; }
+  .wusstest-grid { flex-direction: column; }
+  .cred-grid { flex-direction: column; }
+  .meta-bar { padding: 8px 20px 16px; }
+  .logobar { padding: 14px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🌿 Zeitlich limitiertes Angebot – Jetzt nur <strong>€27</strong> statt €97 · Inkl. 3 Gratis-Boni
+</div>
+
+<!-- LOGO -->
+<div class="logobar">
+  <div class="logo-text">Soulflow<span> Breathwork</span></div>
+</div>
+
+<!-- DATE / META -->
+<div class="meta-bar">
+  <em>23.04.2026 – Innsbruck, AT – Ein Artikel von Peter Steinlechner – Zertifizierter Breathwork Coach &amp; Gründer Soulflow Breathwork</em>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HERO: 2 SPALTEN – Links Text, Rechts Bild -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="hero-section">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="for-line">Für Menschen, die trotz Schlaf morgens erschöpft aufwachen:</p>
+      <h1>Das Problem ist nicht dein Schlaf – sondern was nachts in deinem Körper passiert.</h1>
+      <p class="hero-lead">Wie du in 14 Tagen endlich tief schläfst, morgens erholt aufwachst und Stress wirklich loslässt – in nur 5 Minuten täglich.</p>
+      <div class="hero-story">
+        <p>Dein Körper schreit nach Erholung – aber du weißt nicht, warum sie ausbleibt.</p>
+        <p><strong>Es ist 22:30 Uhr.</strong> Du liegst im Bett. Du bist müde – wirklich müde. Aber dein Kopf dreht sich. Die Gedanken kommen. Das Gespräch von heute. Was morgen noch alles passieren wird. Dieser diffuse Druck, den du kaum benennen kannst.</p>
+        <p>Du weißt: Wenn du jetzt nicht bald einschläfst, bist du morgen früh wieder zu nichts zu gebrauchen.</p>
+        <p>Und selbst wenn du einschläfst – du wachst auf und bist immer noch erschöpft. Als hättest du gar nicht wirklich geschlafen.</p>
+        <p>Doch das ist nur der Anfang. Denn wenn du nichts änderst, wird es schlimmer.</p>
+        <p>Lies diese Seite unbedingt bis zum Ende. Es könnte dein Leben verändern.</p>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="img-placeholder">[Foto von dir – Peter – entspannt & authentisch, z.B. in der Natur oder bei einer Atemübung]</div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAL BANNER -->
+<div class="teal-banner">
+  <strong>Endlich wieder tief schlafen, morgens erholt aufwachen und echten Stress hinter sich lassen.</strong> Diese einfache Atem-Methode reguliert dein Nervensystem – ohne Pillen, ohne Geräte, ohne Aufwand.
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PAIN BLOCK – Die volle Geschichte -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2>Lass uns über die Realität sprechen – und zwar die, die du nicht gerne hörst...</h2>
+
+    <p>Morgens reißt dich der Wecker brutal aus dem Schlaf. Aber irgendetwas stimmt nicht. Du hast geschlafen – und bist trotzdem erschöpft.</p>
+
+    <p>Dein erster Gedanke geht zum Kaffee.</p>
+
+    <p><strong>Es ist 07:15 Uhr</strong> und du sitzt am Frühstückstisch. Dein Körper ist da, aber du bist es irgendwie nicht. Diese bleierne Schwere, die du schon so lange kennst, dass sie sich anfühlt wie normal.</p>
+
+    <p>Der Nacken ist schon wieder verspannt. Du ignorierst es.</p>
+
+    <p>Tagsüber kämpfst du dich durch. Konzentrieren fällt schwer. Die kleinste Kleinigkeit kann dich aus der Bahn werfen. Abends bist du so kaputt, dass du eigentlich sofort einschlafen müsstest – <strong>aber dann liegst du wieder da und kannst nicht abschalten.</strong></p>
+
+    <p>Vielleicht kennst du auch das: Nachts aufwachen um 3 Uhr – und dann liegt der Kopf wieder auf Hochtouren. Oder dieses Herzrasen, das manchmal abends kommt. Oder dieser Schwindel, für den kein Arzt eine Erklärung hat.</p>
+
+    <p>Du bist bei Ärzten gewesen. EKG, Blutbild, Schilddrüse – alles unauffällig. „Stress", sagen sie. Aber wie du den loswirst, erklärt dir niemand.</p>
+
+    <p>Der Urlaub bringt auch kaum etwas. Du bist weg, aber die Erschöpfung fährt mit.</p>
+
+    <p><strong>Vielleicht kennst du auch eines dieser Symptome:</strong></p>
+
+    <p>Morgens erschöpft aufwachen obwohl du geschlafen hast, abends nicht abschalten können, Gedanken die sich im Kreis drehen, innere Unruhe die einfach nicht weggeht, Herzrasen oder Druck im Brustbereich ohne Befund, ständiger Stress der sich „normal" anfühlt, Konzentrationsprobleme, Reizbarkeit, das Gefühl nie wirklich erholt zu sein.</p>
+
+    <p>Erkannt?</p>
+
+    <p><strong>Dann herzlich willkommen – du bist mit einem überreizten Nervensystem konfrontiert.</strong></p>
+
+    <p>Einem Zustand, den ich selbst nur zu gut kenne.</p>
+
+    <p>Wenn dir auch nur eines davon bekannt vorkommt, <em>bist du definitiv nicht allein.</em></p>
+
+    <p>Millionen von Menschen kämpfen mit genau dem gleichen. Und es gibt eine Lösung – die einfacher ist, als du glaubst.</p>
+  </div>
+</section>
+
+<!-- WHITE SECTION – Wusstest du... -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 style="text-align:center;">Wusstest du...</h2>
+    <div class="wusstest-grid">
+      <div class="wusstest-item">
+        <div class="wusstest-icon">⚠️</div>
+        <p>… dass Stress nichts anderes als eine körperliche Reaktion ist – ausgelöst durch dein Nervensystem, das im Überlebensmodus feststeckt? Dein Körper denkt, er muss sich vor einer echten Gefahr schützen – auch wenn du nur im Bett liegst und schlafen willst.</p>
+      </div>
+      <div class="wusstest-item">
+        <div class="wusstest-icon">😔</div>
+        <p>… dass die meisten Lösungen am falschen Ort ansetzen? Schlafmittel, Melatonin, Apps – sie überdecken das Symptom. Die eigentliche Ursache – ein überreiztes Nervensystem – bleibt unberührt. Deshalb hilft nichts wirklich nachhaltig.</p>
+      </div>
+      <div class="wusstest-item">
+        <div class="wusstest-icon">🌿</div>
+        <p>… dass dein Körper bereits alles hat, was er zur Erholung braucht? Der Vagusnerv – dein körpereigener Ruheschalter – kann jederzeit aktiviert werden. Mit deinem Atem. Kein Gerät, keine Pille, kein Aufwand. Nur Wissen – und 5 Minuten.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:60px;">Das Schlimme ist...</h2>
+
+    <p>Du weißt oft gar nicht, dass dein Nervensystem überreizt ist. Denn es ist kein Befund, den dein Arzt auf dem Bildschirm sieht.</p>
+
+    <p>Dabei ist es das Einzige, was zählt. Denn <strong>solange dein Nervensystem im Stressmodus feststeckt, kann dein Körper nachts nicht wirklich regenerieren.</strong> Egal wie lange du schläfst.</p>
+
+    <p>Ich habe Bücher gelesen, Kurse besucht, alles ausprobiert. Durch die Arbeit mit dem Atem hat sich alles verändert. Ich schliefe endlich wieder tief. Ich wachte morgens ausgeruht auf. Der Druck, die Unruhe, das Herzrasen – all das ist weg.</p>
+
+    <p>Als ich darüber in meinem Umfeld gesprochen habe, wussten viele noch nicht einmal, was der Vagusnerv ist – geschweige denn, wie man ihn aktiviert. Dabei ist es so einfach.</p>
+
+    <p><strong>Die meisten Methoden scheitern</strong>, weil sie zu kompliziert, zu zeitaufwändig oder am eigentlichen Problem vorbeigehen.</p>
+
+    <p>Wenn du schon einiges probiert hast, wird dir dieses Wissen zeigen, warum es bisher nicht nachhaltig gewirkt hat – und was stattdessen funktioniert.</p>
+
+    <p><strong>Gründe und Auslöser gibt es viele:</strong></p>
+
+    <p>Arbeit, Familie, Leistungsdruck, zu viele Reize, schlechte Schlafgewohnheiten, kein echter Ausgleich – das alles hält dein Nervensystem unter Strom. Und der Wahnsinn? <strong>Oft sind es die kleinen, einfachen Dinge, die den größten Unterschied machen.</strong></p>
+
+    <p><strong>Ein überlastetes Nervensystem ist nicht deine Schuld.</strong> In unserer modernen Welt ist es kaum zu vermeiden. Es trifft wirklich jeden.</p>
+
+    <p>Die schlechte Nachricht: Es gibt keine Wunderpille und keinen magischen Trick.</p>
+
+    <p><strong>Die gute Nachricht: Dein Nervensystem kann sich regulieren. Jederzeit. Mit deinem eigenen Atem.</strong> Und das ist einfacher, als du glaubst. Ich zeige dir wie.</p>
+
+    <p>Woher ich das weiß? Ich war selbst am Ende. Und hätte fast hingeworfen.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ABOUT / ORIGIN STORY – Foto links, Text rechts -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-teal-pale">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="img-placeholder">[Dein persönliches Foto – authentisch, nicht zu gestellt. Zeig dich wie du wirklich bist.]</div>
+      </div>
+      <div class="about-text">
+        <p>Ich war da, wo du jetzt bist – komplett am Ende.</p>
+        <p><strong>Ich habe jahrelang mit einem überlasteten Nervensystem gelebt.</strong> Ich weiß genau, wie es sich anfühlt, erschöpft aufzuwachen, tagsüber zu funktionieren ohne wirklich zu leben.</p>
+        <p>Nach außen sah alles gut aus. Ich war aktiv, hatte Projekte, hatte Ziele. Aber innerlich sah es anders aus.</p>
+        <p>Ich schlief schlecht – manchmal kaum. Morgens wachte ich auf und war sofort wieder müde. Kaffee half für eine Stunde, dann kam das Loch.</p>
+        <p>Dann kamen die Symptome, die mir wirklich Angst gemacht haben: <strong>immer wieder Schwindel. Herzrasen abends, manchmal auch mitten am Tag.</strong> Druck im Brustbereich. Ich dachte ernsthaft, ich hätte Herzprobleme.</p>
+        <p>Was folgte, war ein echter Ärzte-Marathon. EKG, Blutbild, Herzecho, Schilddrüse – alles. Das Ergebnis jedes Mal: <strong>Befunde unauffällig.</strong> „Stress", sagten sie. Und schickten mich wieder nach Hause.</p>
+        <p>Aber wie ich den Stress loswerden sollte – dazu hatte keiner eine Antwort.</p>
+        <p style="margin-bottom:0;">Bis ich die Antwort selbst fand.</p>
+      </div>
+    </div>
+
+    <div style="max-width:1000px; margin:40px auto 0;">
+      <h2 style="margin-bottom:20px;">Hi, ich bin Peter Steinlechner</h2>
+      <p>und ich zeige dir jetzt, wie ich damals die Kontrolle über mein Nervensystem zurückgewann – und seither tief schlafe, erholt aufwache und Stress wirklich loslassen kann.</p>
+      <p>Irgendwann fing ich an, mich intensiv mit dem autonomen Nervensystem zu beschäftigen – und mit der Kraft des Atems. Ich lernte: <strong>Mein Körper war nicht kaputt. Mein Nervensystem war einfach nie wirklich runtergefahren worden.</strong></p>
+      <p>Der Parasympathikus – unser Erholungssystem – war dauerhaft unterdrückt. Mein Vagusnerv, der natürliche Ruheschalter des Körpers, wurde nie aktiviert.</p>
+      <p>Ich begann mit gezielten Atemübungen zu arbeiten. Nicht irgendwelche YouTube-Videos. Sondern spezifische Protokolle, die direkt das Nervensystem ansprechen. <strong>Die Veränderung war schneller und tiefer als ich gedacht hätte.</strong></p>
+      <p>Heute schlafe ich tief durch. Ich wache ausgeruht auf. Kein Herzrasen mehr, kein Schwindel, keine bleierne Müdigkeit mehr morgens. Und ich habe daraus ein konkretes System entwickelt – das für jeden funktioniert.</p>
+
+      <div style="background:#fff; border-radius:10px; padding:24px 28px; margin-top:32px; border:1px solid var(--border);">
+        <p style="margin-bottom:0;">Unten zeige ich dir, wie auch du in 14 Tagen wieder tief schläfst und morgens wirklich erholt aufwachst – mit nur wenigen Minuten täglich.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PETER HAT: Credentials -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-teal-pale">
+  <div class="container">
+    <h2 style="text-align:center;">Peter hat:</h2>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="cred-icon">🏅</div>
+        <h4>Zertifiziert</h4>
+        <p>Zertifizierter Breathwork Coach mit fundierter Ausbildung in Atemarbeit</p>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">🌿</div>
+        <h4>Gegründet</h4>
+        <p>Soulflow Breathwork – Deine Anlaufstelle für Nervensystemregulation durch Atem</p>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">❤️</div>
+        <h4>Gelebt</h4>
+        <p>Hat selbst an Schlafproblemen, Erschöpfung, Herzrasen & Schwindel gelitten – kennt den Weg von innen</p>
+      </div>
+    </div>
+
+    <ul class="cred-list" style="margin-top:36px;">
+      <li><span class="cred-icon-sm">✅</span> Zertifizierter Breathwork Coach</li>
+      <li><span class="cred-icon-sm">✅</span> Gründer Soulflow Breathwork</li>
+      <li><span class="cred-icon-sm">✅</span> Spezialisiert auf Vagusnerv-Aktivierung & Nervensystemregulation</li>
+      <li><span class="cred-icon-sm">✅</span> Hat selbst den Weg aus chronischer Erschöpfung & Schlafproblemen gefunden</li>
+      <li><span class="cred-icon-sm">✅</span> Teilt sein Wissen mit Menschen, die wirklich Erholung brauchen</li>
+    </ul>
+
+    <h3 style="text-align:center; margin-top:50px;">Bekannt aus:</h3>
+    <div class="media-logos">
+      <div class="media-logo">Magazin A</div>
+      <div class="media-logo">Podcast B</div>
+      <div class="media-logo">Platform C</div>
+    </div>
+    <p style="text-align:center; font-size:13px; color:var(--text-light); margin-top:12px;">[Platzhalter – hier deine echten Medienerwähnungen eintragen]</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- 3 TESTIMONIALS (erste Runde) -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-name">Sabine R.</div>
+        <div class="testi-job">Angestellte, 41 Jahre</div>
+        <p class="testi-text">Ich konnte abends nie richtig abschalten. Mit Peters Atem-Methode schlafe ich seit Wochen besser als in den letzten Jahren. <strong>Das Aufwachen am Morgen fühlt sich komplett anders an – ich bin wirklich ausgeruht.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-name">Markus T.</div>
+        <div class="testi-job">Selbstständig, 47 Jahre</div>
+        <p class="testi-text">Ich hatte das Herzrasen und den Schwindel so wie Peter beschreibt. Keiner hat mir geholfen. Die Erklärung mit dem Vagusnerv hat sofort Sinn gemacht. <strong>Die Sofortübung wirkt bei mir noch heute abends zuverlässig.</strong></p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-name">Lisa K.</div>
+        <div class="testi-job">Mutter & Teilzeit-Angestellte, 38 Jahre</div>
+        <p class="testi-text">Ich habe wenig Zeit und bin skeptisch gegenüber allem Neuen. Aber 5 Minuten täglich – das schafft wirklich jeder. <strong>Schon nach einer Woche hat mein Partner gefragt: „Was machst du anders? Du bist so ruhig."</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAL BANNER 2 -->
+<div class="teal-banner">
+  Lass mich dir zeigen, wie du in nur <strong>14 Tagen</strong> tiefer schläfst, morgens erholt aufwachst und dein Nervensystem endlich wieder im Gleichgewicht ist.
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PRODUKT VORSTELLUNG -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="product-intro">
+      <p>Darf ich vorstellen: 👇</p>
+      <h2>Das 14-Tage Nervensystem Reset Programm</h2>
+      <p>In 14 Tagen zu tiefem Schlaf, echter Erholung und weniger Stress – in nur 5 Minuten täglich.</p>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-img">
+        <div class="img-placeholder">
+          <div>
+            <strong>Nervensystem Reset</strong>
+            [Produktbild / Mockup hier einfügen]
+          </div>
+        </div>
+      </div>
+      <div class="product-text">
+        <p>Das Nervensystem Reset Programm kombiniert <strong>gezielte Atemübungen mit einfachen Prinzipien der Nervensystemregulation</strong> – um Stress aus deinem Körper zu lösen, deinen Vagusnerv zu aktivieren und dir endlich wieder tiefen, erholsamen Schlaf zu ermöglichen.</p>
+
+        <p>Damit du dich in 14 Tagen wieder wie ein Mensch fühlst – ausgeruht, klar, geerdet.</p>
+
+        <p>Die Übungen kannst du <strong>jederzeit und überall machen</strong> – du brauchst lediglich Internet und 5 Minuten.</p>
+
+        <p>Schon nach den ersten Tagen wirst du merken, wie dein Körper anders reagiert. Wie er sich entspannt. Wie der Schlaf tiefer wird.</p>
+
+        <p>Jahrelang war ich selbst gefangen in diesem Muster – und wusste nicht, dass die Lösung so nah war.</p>
+        <p>Alles, was mir geholfen hat, habe ich in diesem Programm zusammengefasst. Und ehrlich gesagt – es ist viel mehr wert als das, was du heute investierst.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- VISION – Was wäre wenn... -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-teal-pale">
+  <div class="container">
+    <h2 style="text-align:center;">Was wäre, wenn schon bald das hier dein neues Normal wäre? 👇</h2>
+
+    <div class="vision-grid" style="margin-top:36px;">
+      <div class="vision-img">
+        <div class="img-placeholder">[Foto von dir – entspannt, glücklich, lebendig – nach dem Reset]</div>
+      </div>
+      <div class="vision-text">
+        <ul class="vision-list">
+          <li><span class="vision-check">✅</span> Du wachst morgens auf – und bist wirklich ausgeruht. Ohne Wecker-Kampf. Ohne das Blei-Gefühl.</li>
+          <li><span class="vision-check">✅</span> Abends legst du dich hin – und dein Geist beruhigt sich. Einfach so. In Minuten.</li>
+          <li><span class="vision-check">✅</span> Du hast wieder Energie für die Dinge, die dir wirklich wichtig sind – Familie, Hobbys, dein Leben.</li>
+          <li><span class="vision-check">✅</span> Stresssituationen werfen dich nicht mehr so leicht aus der Bahn – du bist geerdet.</li>
+          <li><span class="vision-check">✅</span> Kaffee trinkst du weil er schmeckt – nicht weil du sonst nicht funktionierst.</li>
+          <li><span class="vision-check">✅</span> Du weißt: Ich habe ein Werkzeug, das immer funktioniert – jederzeit, überall, kostenlos.</li>
+          <li><span class="vision-check">✅</span> Dein Partner / deine Partnerin fragt dich: „Was hast du verändert? Du wirkst so ruhig."</li>
+        </ul>
+        <p style="margin-top:24px;"><strong>Genau das kann deine Realität sein. Nicht irgendwann – sondern in 14 Tagen. Bist du bereit?</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- WAS DU LERNST + WEITERE GEHEIMNISSE -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2><strong>Was dich in dem Programm erwartet:</strong></h2>
+
+    <ul class="checkpoints">
+      <li>Wie dein Nervensystem wirklich funktioniert – so einfach erklärt, dass es ein Kind versteht</li>
+      <li>Warum du morgens erschöpft bist, obwohl du geschlafen hast – die echte Ursache (kein Arzt sagt dir das)</li>
+      <li>Was der Vagusnerv ist, wie er funktioniert – und warum er der Schlüssel zu echter Erholung ist</li>
+      <li>Die 5-Minuten-Atemübung, die dein Nervensystem direkt in den Erholungsmodus schaltet</li>
+      <li>Das 14-Tage-Protokoll: was du wann machst – Schritt für Schritt geführt</li>
+      <li>Warum Melatonin, Schlaf-Apps und Entspannungsvideos keine nachhaltige Wirkung haben</li>
+      <li>Wie du deinen Parasympathikus in unter 3 Minuten aktivierst – jederzeit, überall</li>
+      <li>Was chronischer Stress mit deinem Schlaf macht – und wie du diesen Kreislauf durchbrichst</li>
+      <li>Wie du das gelernte nach den 14 Tagen zur täglichen Gewohnheit machst</li>
+    </ul>
+
+    <h2 style="margin-top:60px;"><strong>Weitere Dinge, die ich dir im Programm verrate:</strong></h2>
+
+    <ul class="checkpoints">
+      <li>2 Atemtechniken, die bei akutem Herzrasen oder Panik sofort helfen</li>
+      <li>Warum Urlaub oft keine echte Erholung bringt – und was stattdessen wirkt</li>
+      <li>Das eine Ding, das dein Nervensystem täglich unbemerkt unter Stress hält</li>
+      <li>Wie du bei Einschlafproblemen deinen Körper innerhalb von Minuten wirklich beruhigst</li>
+      <li>Was Schwindel und Herzrasen ohne Befund wirklich bedeuten – und was du tun kannst</li>
+      <li>Warum zu viel Sport dein Nervensystem zusätzlich belasten kann</li>
+      <li>Eine Methode, um abends Gedanken loszulassen – auch wenn der Tag stressig war</li>
+      <li>Wie dein Atem direkt mit deinem Herzschlag zusammenhängt – faszinierend und sofort nutzbar</li>
+      <li>Weshalb echte Erholung von innen kommt – nicht von außen</li>
+      <li>Wie du lernst, deinen eigenen Körper besser zu verstehen und auf seine Signale zu hören</li>
+    </ul>
+
+    <p style="margin-top:32px;">Mit dem Nervensystem Reset Programm bekommst du alle Werkzeuge an die Hand, um deinen Körper wirklich zur Ruhe zu bringen – und endlich die Erholung zu bekommen, die du verdienst.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- KOSTEN / PRICE SECTION -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-teal-pale">
+  <div class="container">
+    <h2 style="text-align:center;">Kosten des Programms</h2>
+
+    <p>Was wäre es dir wert, endlich wieder tief zu schlafen und morgens wirklich ausgeruht aufzuwachen?</p>
+
+    <p>Möchtest du weiterhin erschöpft durch den Tag gehen? Oder möchtest du lieber endlich wieder erholt aufwachen, klar denken und das Leben wirklich genießen?</p>
+
+    <p><strong>Dein überreiztes Nervensystem kostet dich jeden Tag Lebensqualität.</strong> Auch wenn es sich mittlerweile normal anfühlt.</p>
+
+    <p>Ich weiß: Ich hätte alles dafür gegeben, dieses Wissen früher gehabt zu haben. Allein die zurückgewonnene Schlafqualität und die morgendliche Energie – unbezahlbar.</p>
+
+    <p>Damals habe ich viel Geld für Nahrungsergänzungsmittel, Schlaf-Gadgets und verschiedene Kurse ausgegeben – insgesamt schnell über 1.000 Euro im Jahr. Ohne nachhaltige Wirkung.</p>
+
+    <p>Ich möchte, dass dieses Programm für jeden zugänglich ist. Deshalb habe ich den Preis so niedrig wie möglich gehalten: <strong>€97.</strong> Das ist deutlich günstiger als ein einzelnes Coaching oder eine Schlafberatung.</p>
+
+    <p>Aber als <strong>Einführungsangebot</strong> bekommst du das Programm heute für nur <strong>€27</strong> statt €97!</p>
+
+    <p>Es handelt sich um eine einmalige Zahlung – kein Abo, keine versteckten Kosten.</p>
+
+    <p>Und außerdem <strong>schenke</strong> ich dir heute noch <strong>3 kostenlose Boni</strong> dazu.</p>
+
+    <!-- BONUS 1 -->
+    <div class="bonus-item">
+      <p class="bonus-label">👉🏼 Kostenloses Bonusgeschenk 1: Sofort-Einschlafen-Übung (Wert: €29)</p>
+      <div class="bonus-img-row">
+        <div class="bonus-img-placeholder">[Bonus Bild 1 – Einschlafen]</div>
+        <div>
+          <p>Die Vagusnerv-Atemübung zum sofortigen Einschlafen. Direkt heute Nacht anwendbar – ohne den Rest des Programms gesehen zu haben. Wirkt in weniger als 10 Minuten.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUS 2 -->
+    <div class="bonus-item">
+      <p class="bonus-label">👉🏼 Kostenloses Bonusgeschenk 2: Nervensystem-Sofortübung (Wert: €29)</p>
+      <div class="bonus-img-row">
+        <div class="bonus-img-placeholder">[Bonus Bild 2 – Sofortübung]</div>
+        <div>
+          <p>Eine 3-Minuten-Übung zur sofortigen Nervensystemregulation bei Stress, Herzrasen oder innerer Unruhe. Funktioniert im Büro, im Auto, überall.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUS 3 -->
+    <div class="bonus-item">
+      <p class="bonus-label">👉🏼 Kostenloses Bonusgeschenk 3: Atemprotokoll-Bibliothek (Wert: €39)</p>
+      <div class="bonus-img-row">
+        <div class="bonus-img-placeholder">[Bonus Bild 3 – Protokolle]</div>
+        <div>
+          <p>5 zusätzliche Atemprotokolle: für Energie am Morgen, Fokus bei der Arbeit, Ruhe nach einem stressigen Tag, Erholung nach Sport – und tiefe Entspannung am Abend.</p>
+        </div>
+      </div>
+    </div>
+
+    <p>Allein diese 3 Boni sind <strong>über €97 wert.</strong> Du bekommst sie heute <strong>kostenlos dazu</strong>, wenn du jetzt mit dem Nervensystem Reset startest.</p>
+  </div>
+</section>
+
+<!-- PRICE BOX -->
+<section class="section">
+  <div class="container">
+    <div class="price-box">
+      <h3 style="text-align:center; margin-bottom:20px;">Das bekommst du:</h3>
+
+      <div class="price-tag-box">
+        <a href="#" style="font-family:'Urbanist',sans-serif; font-size:13px; color:var(--teal); font-weight:700; text-decoration:none;">Einführungsangebot – nur kurze Zeit verfügbar</a>
+      </div>
+
+      <ul class="price-content-list">
+        <li>👉🏼 <strong>14-Tage Nervensystem Reset Programm</strong> mit kurzen geführten Atemübungen (5–10 Min.) (Wert: €97)</li>
+        <li>👉🏼 <strong>Vagusnerv-Aktivierungsguide</strong> – was der Vagusnerv ist und wie du ihn täglich stimulierst (Wert: €27)</li>
+        <li>👉🏼 <strong>Kostenloses Bonusgeschenk 1:</strong> Sofort-Einschlafen-Übung (Wert: €29)</li>
+        <li>👉🏼 <strong>Kostenloses Bonusgeschenk 2:</strong> Nervensystem-Sofortübung (Wert: €29)</li>
+        <li>👉🏼 <strong>Kostenloses Bonusgeschenk 3:</strong> Atemprotokoll-Bibliothek (Wert: €39)</li>
+      </ul>
+
+      <div class="value-box">
+        Gesamtwert aller Inhalte: <span class="value-old">€221</span><br>
+        <span class="value-new">Heute NUR €27</span>
+      </div>
+
+      <p style="text-align:center; font-weight:700; margin-bottom:16px;">Klicke dazu jetzt einfach auf den Button:</p>
+
+      <a href="#" class="cta-button">
+        ≫ Ja, ich möchte endlich wieder tief schlafen<br>
+        <span style="font-size:16px; font-weight:400;">Einführungsangebot – nur €27 statt €221</span>
+      </a>
+
+      <p class="cta-sub-text">🔒 Sichere SSL-Zahlung · Kein Abo · Sofortiger Zugang</p>
+
+      <p style="margin-top:20px; font-size:15px;">Nervensystem Reset ist ein Online-Kurs mit geführten Atemübungen und Erklär-Videos (für alle Geräte mit Internet). Zugriff sofort nach Kauf.</p>
+      <p style="font-size:15px;">Dieses Programm ist eine Hilfe zur Selbsthilfe. Den ersten Schritt musst du selbst gehen – aber du musst ihn nicht alleine machen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GARANTIE -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-teal-pale">
+  <div class="container">
+    <div class="guarantee-grid">
+      <div class="guarantee-img">🛡️</div>
+      <div class="guarantee-text">
+        <h3>Außerdem erhältst du eine uneingeschränkte <strong>30-tägige Geld-zurück-Garantie.</strong></h3>
+        <p>Sollte das Nervensystem Reset Programm dich nicht begeistern oder du keine positiven Veränderungen bemerken, schreibe einfach eine Mail an info@soulflow-breathwork.com.</p>
+        <p>Anschließend erhältst du dein Geld sofort wieder zurück. <strong>Werde erholt – oder es ist kostenlos.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GROSSE TESTIMONIALS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2 style="text-align:center;">Zufriedene Teilnehmer:</h2>
+    <div class="testi-big-grid">
+      <div class="testi-big">
+        <div class="testi-top">
+          <div class="testi-avatar">SM</div>
+          <div class="testi-info">
+            <div class="name">Sandra M., 38</div>
+            <div class="role">Marketing Managerin</div>
+            <div class="testi-stars-inline">★★★★★</div>
+          </div>
+        </div>
+        <p class="testi-quote">„Ich war ständig erschöpft und konnte abends nie wirklich abschalten. Nach nur einer Woche in diesem Programm habe ich nicht nur meinen Schlaf verbessert, sondern meine gesamte Lebensqualität. <strong>Ich schlafe jetzt tief durch und wache morgens zum ersten Mal seit Jahren wirklich ausgeruht auf.</strong>"</p>
+        <div class="tve-verified">✅ Verifizierter Kauf</div>
+      </div>
+      <div class="testi-big">
+        <div class="testi-top">
+          <div class="testi-avatar">MR</div>
+          <div class="testi-info">
+            <div class="name">Michael R., 44</div>
+            <div class="role">Selbstständig</div>
+            <div class="testi-stars-inline">★★★★★</div>
+          </div>
+        </div>
+        <p class="testi-quote">„Das Herzrasen und der Schwindel abends – ich dachte wirklich, da stimmt was mit meinem Herzen nicht. Peters Erklärung hat sofort geklickt. Die Sofortübung hilft mir bis heute bei akutem Stress. <strong>Ich hätte nicht gedacht, dass 5 Minuten Atmen so viel verändern können.</strong>"</p>
+        <div class="tve-verified">✅ Verifizierter Kauf</div>
+      </div>
+      <div class="testi-big">
+        <div class="testi-top">
+          <div class="testi-avatar">AT</div>
+          <div class="testi-info">
+            <div class="name">Anna T., 41</div>
+            <div class="role">Lehrerin & Mutter</div>
+            <div class="testi-stars-inline">★★★★★</div>
+          </div>
+        </div>
+        <p class="testi-quote">„Nach Jahren der Erschöpfung hatte ich mich damit abgefunden, dass das eben so ist. Das Programm hat mir gezeigt, dass das nicht stimmt. <strong>Ich genieße jetzt meinen Morgen – wirklich. Das ist ein komplett neues Gefühl.</strong>"</p>
+        <div class="tve-verified">✅ Verifizierter Kauf</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PROS / CONS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 style="text-align:center;">Für wen ist das Nervensystem Reset Programm geeignet?</h2>
+    <div class="pros-cons-grid">
+      <div class="pros-box">
+        <h3>Pros 👍</h3>
+        <p class="subline">Dieses Programm ist für dich...</p>
+        <ul class="pros-list">
+          <li><span class="pros-icon">✓</span> ...wenn du bereit bist, 5 Minuten täglich in deine Erholung zu investieren</li>
+          <li><span class="pros-icon">✓</span> ...wenn du endlich verstehen willst, was in deinem Körper wirklich passiert</li>
+          <li><span class="pros-icon">✓</span> ...wenn du eine natürliche Lösung ohne Pillen oder Geräte suchst</li>
+          <li><span class="pros-icon">✓</span> ...wenn du keine Lust mehr hast auf Erschöpfung, die sich normal anfühlt</li>
+          <li><span class="pros-icon">✓</span> ...wenn du morgens erholt aufwachen willst – nicht mehr funktionieren müssen</li>
+          <li><span class="pros-icon">✓</span> ...wenn du keine 100 Bücher lesen willst, sondern klares Wissen und sofort umsetzbare Übungen</li>
+        </ul>
+      </div>
+      <div class="cons-box">
+        <h3>Cons 👎</h3>
+        <p class="subline">Dieses Programm ist <u>nicht</u> für dich...</p>
+        <ul class="cons-list">
+          <li><span class="cons-icon">✗</span> ...wenn du eine medizinische Schlafstörung wie Schlafapnoe hast (bitte ärztlich behandeln lassen)</li>
+          <li><span class="cons-icon">✗</span> ...wenn du nach einem Trick suchst, bei dem du selbst gar nichts tun musst</li>
+          <li><span class="cons-icon">✗</span> ...wenn du mit deinem aktuellen Leben rundum zufrieden bist</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- TRUST ICONS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon-img">🔒</div>
+        <p>Sicherer Kauf</p>
+        <small>SSL-verschlüsselte Zahlung. Deine Daten sind sicher.</small>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon-img">⚡</div>
+        <p>Sofortiger Zugang</p>
+        <small>Direkt nach dem Kauf startest du – noch heute Nacht.</small>
+      </div>
+      <div class="trust-icon-img" style="font-size:64px; text-align:center;">🛡️</div>
+      <div class="trust-item">
+        <p>30-Tage Garantie</p>
+        <small>Uneingeschränkte Geld-zurück-Garantie. Kein Risiko für dich.</small>
+      </div>
+    </div>
+
+    <!-- REPEAT CTA -->
+    <div style="text-align:center; margin-top:50px;">
+      <a href="#" class="cta-button" style="display:inline-block; max-width:520px;">
+        ≫ Jetzt Schlaf & Nervensystem Reset starten<br>
+        <span style="font-size:16px; font-weight:400;">Einführungsangebot – nur €27 statt €221</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FAQ -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">Kann ich sofort starten?</div>
+        <div class="faq-a">Ja, sofort. Direkt nach dem Kauf bekommst du eine E-Mail mit deinen Zugangsdaten. Bonus #1 (die Sofort-Einschlafen-Übung) kannst du noch heute Nacht anwenden – noch bevor du irgendeinen anderen Teil des Programms gesehen hast.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Was genau bekomme ich nach dem Kauf?</div>
+        <div class="faq-a">Du erhältst das 14-Tage Nervensystem Reset Programm mit geführten Atemübungen (kurze Videos, je 5–10 Minuten), einen Vagusnerv-Aktivierungsguide, und alle 3 Boni. Alles digital, direkt auf deinem Smartphone, Tablet oder Laptop zugänglich.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Ist das ein Abo?</div>
+        <div class="faq-a">Nein. Es handelt sich um eine einmalige Zahlung von €27. Kein Abo, keine automatische Verlängerung, keine versteckten Kosten.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Was ist der Vagusnerv – und warum ist er so wichtig?</div>
+        <div class="faq-a">Der Vagusnerv ist der längste Nerv deines Körpers. Er verbindet Gehirn, Herz und Darm – und ist der direkte Schalter zwischen Stress und Erholung. Wenn er aktiv ist, entspannt sich dein ganzer Körper: Herzrate sinkt, Cortisol sinkt, du kannst wirklich abschalten. Du kannst ihn jederzeit mit gezielten Atemübungen aktivieren – genau das zeige ich dir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Ich habe schon alles probiert. Warum soll das jetzt anders sein?</div>
+        <div class="faq-a">Weil die meisten Methoden am falschen Ort ansetzen. Sie behandeln das Symptom (nicht einschlafen können) – nicht die Ursache (überreiztes Nervensystem). Gezielte Atemarbeit aktiviert direkt deinen Vagusnerv und schaltet dein Nervensystem in den Erholungsmodus. Das ist physiologisch. Das können Melatonin oder Apps grundsätzlich nicht leisten.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Wie anstrengend sind die Übungen?</div>
+        <div class="faq-a">Gar nicht. Die Atemübungen sind sanft, ruhig und angenehm. Du brauchst keine Vorkenntnisse, kein Equipment, keinen bestimmten Ort. Du kannst sie im Bett machen, auf dem Sofa, oder am Schreibtisch. 5 Minuten reichen.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Ich habe kaum Zeit – lohnt sich das trotzdem?</div>
+        <div class="faq-a">Genau dann lohnt es sich. Das Programm ist bewusst auf 5 Minuten täglich ausgelegt – für Menschen mit vollem Alltag. Kein extra Zeitblock, kein Stress. Du kannst es morgens, abends oder in einer Pause machen. Schon 5 Minuten täglich verändern, wie sich dein Körper anfühlt.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GRUSS / PS BLOCK -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <p style="font-family:'Urbanist',sans-serif; font-size:1.2rem; font-style:italic;">Liebe Grüße und alles Gute,</p>
+    <p style="font-family:'Urbanist',sans-serif; font-size:1.4rem; font-style:italic; font-weight:600;">Dein Peter</p>
+
+    <hr style="border:none; border-top:1px solid var(--border); margin:30px 0;">
+
+    <p><strong>PS:</strong> Wenn du diese Seite zuerst überfliegst (so wie ich das immer mache 😊): Ich zeige dir, wie du in 14 Tagen tiefer schläfst, morgens wirklich erholt aufwachst und deinen Dauerstress wirklich loswirst – durch 5 Minuten Atemübungen täglich. Für nur €27. Weniger als eine Packung Schlafmittel. Und mit einer 30-Tage-Geld-zurück-Garantie.</p>
+
+    <p><strong>PPS:</strong> Stell dir vor, du erzählst einer Freundin in 3 Wochen: „Ich schlafe endlich wieder richtig." Kein Wecker-Kampf mehr. Kein Blei-Morgen. Kein Stress der sich normal anfühlt. Das ist möglich – und es liegt buchstäblich in deinem Atem. <strong>Von diesem neuen Morgen trennst dich nur ein Klick.</strong></p>
+
+    <p><strong>PPPS:</strong> Denk daran: Du hast alles, was du brauchst, bereits in dir. Ich zeige dir nur, wie du es benutzt. Mit der 30-Tage-Geld-zurück-Garantie gehst du absolut kein Risiko ein.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA BLOCK -->
+<section class="section bg-teal-pale" style="text-align:center;">
+  <div class="container">
+    <h2>Sichere dir jetzt das Nervensystem Reset Programm<br><em>inklusive aller 3 Boni</em></h2>
+    <p>Regulärer Preis <s>€221</s></p>
+    <p style="font-size:2rem; font-weight:900; color:var(--green-ok);">HEUTE NUR €27</p>
+    <p>Über [XXX] Menschen haben bereits mit diesem Programm wieder tief geschlafen.</p>
+    <p><strong>Es gibt keinen Grund, weshalb das, was ich dir zeige, bei dir nicht funktionieren sollte.</strong></p>
+    <a href="#" class="cta-button" style="display:inline-block; max-width:520px; margin-top:20px;">
+      ≫ Ja, ich möchte raus aus der Erschöpfungs-Schleife<br>
+      <span style="font-size:16px; font-weight:400;">Einführungsangebot – nur €27 statt €221</span>
+    </a>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <div style="max-width:760px; margin:0 auto;">
+    *Hinweis: Die Ergebnisse können je nach Person variieren und werden nicht garantiert. Die Informationen auf dieser Website ersetzen keine medizinische Beratung. Bei ernsthaften gesundheitlichen Problemen wende dich bitte an einen Arzt. Bitte setze keine Medikamente ohne Rücksprache mit deinem Arzt ab. Mit einem gesunden Lebensstil lassen sich Ergebnisse erzielen.
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-nav">
+    <a href="#">Start</a>
+    <a href="#">AGB</a>
+    <a href="#">Datenschutz</a>
+    <a href="#">Impressum</a>
+    <a href="#">Widerruf</a>
+    <a href="#">Login</a>
+  </div>
+  <p>Copyright Soulflow Breathwork · Peter Steinlechner · 2025. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+// FAQ Toggle
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const a = q.nextElementSibling;
+    const isOpen = q.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(x => {
+      x.classList.remove('open');
+      x.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      q.classList.add('open');
+      a.classList.add('open');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
