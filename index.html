@@ -11,19 +11,19 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 
 :root {
-  --teal: #07beb1;
-  --teal-dark: #059e93;
-  --teal-pale: #e8faf9;
-  --teal-mid: #b0e8e5;
-  --charcoal: #3b3b3b;
-  --text: #3b3b3b;
+  --teal: #3d6b8e;
+  --teal-dark: #2c5270;
+  --teal-pale: #eaf2f8;
+  --teal-mid: #b0cfe0;
+  --charcoal: #2a2a2a;
+  --text: #2a2a2a;
   --text-light: #666;
   --white: #fff;
-  --off-white: #f8f8f8;
-  --border: #e8e8e8;
-  --green-ok: #00930d;
-  --red-no: #de0000;
-  --gold: #ca9900;
+  --off-white: #f5f8fb;
+  --border: #dde8f0;
+  --green-ok: #1a7a3c;
+  --red-no: #c0392b;
+  --gold: #b07d2e;
 }
 
 body {
@@ -54,10 +54,10 @@ body {
 .logo-text {
   font-size: 22px;
   font-weight: 800;
-  color: var(--teal);
+  color: #2a2a2a;
   letter-spacing: -0.5px;
 }
-.logo-text span { color: var(--charcoal); }
+.logo-text span { color: var(--teal); }
 
 /* ── DATE META ── */
 .meta-bar {
@@ -129,7 +129,7 @@ body {
 
 /* ── TEAL BANNER ── */
 .teal-banner {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: #fff;
   padding: 18px 40px;
   text-align: center;
@@ -694,14 +694,17 @@ footer p { font-size: 13px; color: rgba(255,255,255,0.7); }
 </head>
 <body>
 
-<!-- TOPBAR -->
-<div class="topbar">
-  🌿 Zeitlich limitiertes Angebot – Jetzt nur <strong>€27</strong> statt €97 · Inkl. 3 Gratis-Boni
-</div>
-
 <!-- LOGO -->
 <div class="logobar">
-  <div class="logo-text">Soulflow<span> Breathwork</span></div>
+  <div style="display:flex; align-items:center; justify-content:center; gap:12px;">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="17" stroke="#3d6b8e" stroke-width="2"/>
+      <path d="M10 18 Q14 10 18 18 Q22 26 26 18" stroke="#3d6b8e" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <circle cx="18" cy="18" r="2.5" fill="#3d6b8e"/>
+      <path d="M18 6 Q22 10 24 14" stroke="#b07d2e" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+    </svg>
+    <div class="logo-text">Nervensystem<span>–Reset</span></div>
+  </div>
 </div>
 
 <!-- DATE / META -->
