@@ -683,13 +683,74 @@ footer p { font-size: 13px; color: rgba(255,255,255,0.7); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
+  /* Layout fixes */
   .hero-inner, .about-grid, .product-grid, .vision-grid, .guarantee-grid { flex-direction: column; }
-  .hero-right, .about-img, .product-img, .vision-img { width: 100%; }
+  .hero-right, .about-img, .product-img, .vision-img { width: 100%; padding-top: 0; }
   .three-cards, .testi-grid, .testi-big-grid, .pros-cons-grid { grid-template-columns: 1fr; }
   .wusstest-grid { flex-direction: column; }
   .cred-grid { flex-direction: column; }
-  .meta-bar { padding: 8px 20px 16px; }
+  .meta-bar { padding: 8px 20px 16px; font-size: 12px; }
   .logobar { padding: 14px 20px; }
+
+  /* Hero */
+  .hero-section { padding: 0 16px 40px; }
+  .hero-inner { gap: 24px; }
+  .hero-left h1 { font-size: 26px; }
+  .hero-right { order: 0; }
+  .hero-right img { border-radius: 12px; max-height: 280px; object-fit: cover; object-position: center 70%; }
+
+  /* Sections */
+  .section { padding: 40px 16px; }
+  .teal-banner { padding: 14px 16px; font-size: 16px; }
+
+  /* About circle image */
+  .about-img { display: flex; justify-content: center; }
+  .about-img img { width: 220px !important; height: 220px !important; }
+
+  /* Cards */
+  .card-item { padding: 24px 18px; }
+  .cred-card { min-width: unset; }
+  .bonus-img-row { flex-direction: column; }
+  .bonus-img-placeholder { width: 100%; height: 140px; }
+
+  /* Price box */
+  .price-box { padding: 24px 18px; }
+  .cta-button { font-size: 18px; padding: 16px 20px; }
+
+  /* Trust grid */
+  .trust-grid { flex-direction: column; align-items: center; gap: 24px; }
+  .trust-item { max-width: 240px; }
+
+  /* Guarantee */
+  .guarantee-grid { text-align: center; }
+  .guarantee-img { margin: 0 auto; }
+
+  /* Testimonials */
+  .testi-big { padding: 20px; }
+  .testi-top { gap: 10px; }
+
+  /* FAQ */
+  .faq-q { font-size: 15px; padding: 14px 14px; }
+  .faq-a { padding: 16px 18px; font-size: 15px; }
+
+  /* Media logos */
+  .media-logos { gap: 12px; }
+
+  /* Vision list */
+  .vision-list li { font-size: 15px; }
+
+  /* Pros cons */
+  .pros-box, .cons-box { padding: 20px 16px; }
+
+  /* Footer */
+  .footer-nav { gap: 12px; }
+  footer p { font-size: 12px; }
+}
+
+@media (max-width: 400px) {
+  .hero-left h1 { font-size: 22px; }
+  .logo-text { font-size: 18px; }
+  .price-new, .value-new { font-size: 1.6rem; }
 }
 </style>
 </head>
@@ -893,6 +954,7 @@ footer p { font-size: 13px; color: rgba(255,255,255,0.7); }
       <li><span class="cred-icon-sm">✅</span> Gründer Soulflow Breathwork</li>
       <li><span class="cred-icon-sm">✅</span> Spezialisiert auf Vagusnerv-Aktivierung & Nervensystemregulation</li>
       <li><span class="cred-icon-sm">✅</span> Hat selbst den Weg aus chronischer Erschöpfung & Schlafproblemen gefunden</li>
+      <li><span class="cred-icon-sm">✅</span> Bereits über 200 Menschen persönlich auf dem Weg zu tiefem Schlaf & echter Erholung begleitet</li>
       <li><span class="cred-icon-sm">✅</span> Teilt sein Wissen mit Menschen, die wirklich Erholung brauchen</li>
     </ul>
 
